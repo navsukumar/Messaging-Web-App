@@ -1,0 +1,116 @@
+body {
+	min-height: 100vh;
+	min-height: -webkit-fill-available;
+	overflow: scroll;
+  }
+  html {
+	height: -webkit-fill-available;
+  }
+
+* { 
+	margin: 0; 
+	padding: 0; 
+	box-sizing: border-box; 
+}
+
+body { 
+	font-family: 'Saira', sans-serif;
+	font-size: 15px;
+	padding: 20px;
+	background: #f1f1f1;
+	
+}
+ 
+ 
+#intro {
+	color: #000;
+	font-size: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #cfcfcf;
+	margin-right: 20%;
+	margin-left: 20%;
+	box-shadow: 3px 5px 0px #111;
+	border-radius: 6px;
+	margin-bottom: 10px;
+ } 
+ 
+form { 
+	 position: fixed; 
+	 display: flex;
+
+ 	bottom: 35px; 
+	 width: 100%; 
+	 
+
+ }
+ 
+ form input { 
+	background-color: #cfcfcf;
+
+	border: none;
+	border-radius: 6px;
+	 padding: 10px; 
+	 margin-top: 40px;
+	width: 90%; 
+	
+	box-shadow: 4px 5px 0px 2px #111;
+	-webkit-box-shadow: 4px 5px 0px 2px #111;  
+	-moz-box-shadow:    4px 5px 0px 2px #111;  
+ }
+
+ form input::placeholder {
+	 font-family: 'Saira', sans-serif;
+	 color: #111;
+ }
+
+ form input:focus{
+	 outline: none;
+ }
+ 
+ 
+ #messages { 
+	list-style-type: none;
+ 	margin: 0; 
+	 padding: 0; 
+	 height: 60vh;
+	 
+	 overflow: scroll;	
+ }
+
+ @media screen and (max-width: 600px) {
+	 form input {
+		bottom: 40px;
+	 }
+ }
+ 
+ #messages li { 
+	 padding: 5px 10px; 
+	 margin-bottom: 2px;
+	 margin-right: 20%;
+	 margin-left: 20%;
+ }
+
+ @media screen and (max-width: 600px) {
+	#messages li { 
+		margin-right: 0;
+		margin-left: 0;
+	}
+ }
+ 
+ #messages li:nth-child(odd) { 
+	 background: #d6d6d6; 
+	 border-radius: 4px;
+ }
+
+ #messages li:nth-child(even) { 
+	background: #353535; 
+	color: #fff;
+	border-radius: 4px;
+}
+
+
+#list{
+	text-align: right;
+}
